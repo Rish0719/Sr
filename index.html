@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Message Dropbox</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Secure Message Dropbox</h2>
+
+    <div id="loginBox">
+      <input type="password" id="password" placeholder="Enter Password">
+      <button onclick="unlock()">Unlock</button>
+      <p id="error" class="error"></p>
+    </div>
+
+    <div id="messageBox" style="display:none;">
+      <textarea id="messageInput" placeholder="Type your message..."></textarea>
+      <button onclick="sendMessage()">Send</button>
+      <p id="confirmation" class="confirmation"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
